@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Anatoly Udavikhin](https://up.htmlacademy.ru/adaptive/28/user/132786).
-* Наставник: `Неизвестно`.
+- Студент: [Anatoly Udavikhin](https://up.htmlacademy.ru/adaptive/28/user/132786).
+- Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
