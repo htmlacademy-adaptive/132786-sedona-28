@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <header class="main-header">
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню.</span>
+        </button>
+        <nav class="main-header__nav main-nav">
+          <a class="main-nav__logo" href="index.html" >
+            <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип туристического портала города Седона.">
+          </a>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-container">
+        <section class="intro intro--inner">
+          <h1 class="visually-hidden">Туристический портал города Седона.</h1>
+          <img class="intro__slogan" src="img/intro-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. &quot;Because the Grand Canyon sucks!&quot;" >
+        </section>
+
+        <section class="gallery">
+          <div class="gallery__heading heading">
+            <h2 class="heading__title">Фото и видео</h2>
+            <p class="heading__description">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
+          </div>
+          <ul class="gallery__list">
+            <li class="gallery__item gallery__item--large">
+              <figure>
+                <a href="#">
+                  <img class="gallery__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дороги Седоны на фоне гор и заката.">
+                </a>
+                <figcaption>
+                  <h3 class="gallery__subtitle">Неродные просторы</h3>
+                  <span class="gallery__author">Автор фото: Борис</span>
+                  <span class="gallery__likes">1350</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure>
+                <a href="#">
+                  <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Флора Седоны на фоне скал.">
+                </a>
+                <figcaption>
+                  <h3 class="gallery__subtitle">Местная растительность</h3>
+                  <span class="gallery__author">Автор фото: Сергей</span>
+                  <span class="gallery__likes">143</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure>
+                <a href="#">
+                  <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Серпантины в горной лесистой местности.">
+                </a>
+                <figcaption>
+                  <h3 class="gallery__subtitle">Дорога на север</h3>
+                  <span class="gallery__author">Автор фото: Петр</span>
+                  <span class="gallery__likes">96</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="gallery__item">
+              <figure>
+                <a href="#">
+                  <img class="gallery__image" src="img/photo-4-desktop 1.jpg" width="280" height="280" alt="Вид на мост дьявола.">
+                </a>
+                <figcaption>
+                  <h3 class="gallery__subtitle">Мост дьявола</h3>
+                  <span class="gallery__author">Автор фото: Антон</span>
+                  <span class="gallery__likes">254</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+
+        <section class="video">
+          <div class="video__heading heading">
+            <h2 class="heading__title">Все еще сомневаетесь?</h2>
+            <p class="heading__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="video__player">
+            <img class="video__player-preview" src="img/video-preview.jpg" width="280" height="177" alt="Превью видеопрезентации о Седоне." >
+            <a class="video__player-control" href="#"></a>
+          </div>
+        </section> 
+
+        <footer class="main-footer">
+          <span class="main-footer__hashtag">#visitSedona</span>
+            <ul class="main-footer__socials socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener">
+                  <span class="visually-hidden">Мы во Вконтакте.</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="nofollow noopener">
+                  <span class="visually-hidden">Мы в Telegram.</span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="nofollow noopener">
+                  <span class="visually-hidden">Мы в YouTube.</span>
+                </a>
+              </li>
+            </ul>
+          <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+            <span class="main-footer__copyright-text">Разработано</span>
+            <img class="main-footer__copyright-logo" src="img/htmlacademy-logo.svg" width="28" height="35" alt="Логотип HTML Academy.">
+          </a>
+        </footer>
+    </div>
+  </body>
+</html>
