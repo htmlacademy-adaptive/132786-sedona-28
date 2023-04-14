@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <header class="main-header">
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню.</span>
+        </button>
+        <nav class="main-header__nav main-nav">
+          <a class="main-nav__logo" href="index.html" >
+            <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип туристического портала города Седона.">
+          </a>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-container">
+        <section class="intro intro--inner">
+          <h1 class="visually-hidden">Форма обратной связи посетителей города Седона.</h1>
+          <img class="intro__image intro__image--inner" src="img/intro-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. &quot;Because the Grand Canyon sucks!&quot;" >
+        </section>
+
+        <section class="feedback">
+          <div class="feedback__heading heading">
+            <h2 class="heading__title">Оставьте свой отзыв</h2>
+            <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых Вами достопримечательностях</p>
+          </div>
+
+          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="POST">
+            <fieldset class="form__fieldset form__fieldset--narrow">
+              <legend class="form__legend">Представьтесь:</legend>
+              <label class="form__field form-input">
+                <span class="form-input__label">Имя*:</span>
+                <input class="form-input__input" type="text" placeholder="Имя" name="user-name" value="Пётр" required>
+              </label>
+              <label class="form__field form-input">
+                <span class="form-input__label">Фамилия*:</span>
+                <input class="form-input__input" type="text" placeholder="Фамилия" name="user-surname" value="Пустота" required>
+              </label>
+              <label class="form__field form-input">
+                <span class="form-input__label">Отчество:</span>
+                <input class="form-input__input" type="text" placeholder="Отчество" name="user-patronymic" value="Викторович">
+              </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset form__fieldset--narrow">
+              <legend class="form__legend">Контактная информация:</legend>
+              <label class="form__field form-input">
+                <span class="form-input__label">Контактный телефон*:</span>
+                <input class="form-input__input form-input__input--phone" type="tel" placeholder="Введите телефон" name="user-phone" required>
+              </label>
+              <label class="form__field form-input">
+                <span class="form-input__label">Электронная почта*:</span>
+                <input class="form-input__input form-input__input--email" type="email" placeholder="Введите e-mail" name="user-email" required>
+              </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Ваше общее впечатление:</legend>
+              <label class="form__field form-option">
+                <input class="form-option__input visually-hidden" type="radio" name="attitude" value="positive" checked>
+                <span class="form-option__icon form-option__icon--radio"></span>
+                <span class="form-option__label">Скорее положительное</span>
+              </label>
+              <label class="form__field form-option">
+                <input class="form-option__input visually-hidden" type="radio" name="attitude" value="negative">
+                <span class="form-option__icon form-option__icon--radio"></span>
+                <span class="form-option__label">Скорее отрицательное</span>
+              </label>
+              <label class="form__field form-option">
+                <input class="form-option__input visually-hidden" type="radio" name="attitude" value="obscure">
+                <span class="form-option__icon form-option__icon--radio"></span>
+                <span class="form-option__label">Затрудняюсь ответить</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Посещённые достопримечательности:</legend>
+              <label class="form__field form-option">
+                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="devils-bridge" checked>
+                <span class="form-option__icon form-option__icon--checkbox"></span>
+                <span class="form-option__label">Мост Дьявола</span>
+              </label>
+              <label class="form__field form-option">
+                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="bell-rock" checked>
+                <span class="form-option__icon form-option__icon--checkbox"></span>
+                <span class="form-option__label">Гора-Колокол</span>
+              </label>
+              <label class="form__field form-option">
+                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="slide-park" checked>
+                <span class="form-option__icon form-option__icon--checkbox"></span>
+                <span class="form-option__label">Слайд-парк</span>
+              </label>
+              <label class="form__field form-option">
+                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="red-rocks">
+                <span class="form-option__icon form-option__icon--checkbox"></span>
+                <span class="form-option__label">Красные скалы</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Опишите свои эмоции:</legend>
+              <label class="form__field form-input">
+                <span class="visually-hidden">Поделитесь впечатлениями:</span>
+                <textarea class="form-input__input form-input__input--textarea" name="feelings" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+              </label>
+            </fieldset>
+
+            <button class="form__submit" type="submit">Отправить отзыв</button>
+            <span class="form__hint">* — Обязательные поля</span>
+          </form>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <span class="main-footer__hashtag">#visitSedona</span>
+          <ul class="main-footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener">
+                <span class="visually-hidden">Страница города Седона во Вконтакте.</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="nofollow noopener">
+                <span class="visually-hidden">Страница города Седона в Telegram.</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="nofollow noopener">
+                <span class="visually-hidden">Страница города Седона в YouTube.</span>
+              </a>
+            </li>
+          </ul>
+        <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+          <span class="main-footer__copyright-text">Разработано</span>
+          <img class="main-footer__copyright-logo" src="img/htmlacademy-logo.svg" width="28" height="35" alt="Логотип HTML Academy.">
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
