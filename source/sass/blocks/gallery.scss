@@ -1,0 +1,46 @@
+.gallery {
+  padding: 0 20px;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.gallery__item {
+  margin: 25px 0;
+}
+
+.gallery__figure {
+  margin: 0;
+}
+
+.gallery__image {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.gallery__subtitle {
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+.gallery__author {
+  width: 100%;
+  margin-bottom: 11px;
+}
+
+.gallery__likes {
+  display: block;
+
+  &::before {
+    content: url("../../img/icon-like.svg");
+
+    width: 23px;
+    height: 21px;
+    margin-right: 14px;
+  }
+}

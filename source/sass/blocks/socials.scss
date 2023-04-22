@@ -1,0 +1,29 @@
+.socials {
+  display: flex;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 6px;
+}
+
+.socials__link {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("./../../img/icon-vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("./../../img/icon-telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("./../../img/icon-youtube.svg");
+  }
+}

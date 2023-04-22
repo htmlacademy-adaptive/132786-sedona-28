@@ -1,0 +1,29 @@
+.main-nav__list {
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav__item {
+  display: inline-block;
+  width: 100%;
+  padding: 17px 81px 12px 81px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-white;
+
+  background-color: $color-seagull;
+}
+
+.main-nav__link {
+  color: inherit;
+}
