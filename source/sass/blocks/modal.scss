@@ -1,0 +1,14 @@
+.modal__button {
+  margin: 0 70px;
+  width: calc(100% - 140px);
+}
+
+.modal__button-wrapper {
+  background-color: $color-white-smoke;
+  padding: 20px;
+
+  .modal__button {
+    margin: 0;
+    width: 100%;
+  }
+}

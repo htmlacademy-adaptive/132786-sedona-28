@@ -1,5 +1,5 @@
 .button {
-  display: block;
+  display: inline-block;
   max-width: 100%;
   padding: 17px 0 12px 0;
 
@@ -9,6 +9,7 @@
   text-align: center;
   color: $color-white;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: $color-seagull;
   border: 0;
@@ -22,5 +23,9 @@
     color: rgba($color-white, 0.3);
 
     background-color: $color-shakespeare-tint;
+  }
+
+  &--small-text {
+    font-size: 18px;
   }
 }
