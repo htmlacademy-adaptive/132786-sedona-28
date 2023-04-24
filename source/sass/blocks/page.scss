@@ -1,0 +1,21 @@
+.page__body {
+  min-height: 100vh;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: $color-night-rider;
+
+  background-color: $color-whisper-dark;
+}
+
+.page__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  background-color: $color-white;
+  box-shadow: 0 4px 4px rgba($color-black, 0.25);
+}

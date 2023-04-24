@@ -1,0 +1,41 @@
+.main-nav__list {
+  z-index: 2;
+
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+
+  display: flex;
+  width: 185px;
+  height: 96px;
+
+  transform: translate(-50%, 0);
+}
+
+.main-nav__item {
+  display: inline-block;
+  width: 100%;
+  padding: 17px 81px 12px 81px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-white;
+
+  background-color: $color-seagull;
+}
+
+.main-nav__link {
+  color: inherit;
+  text-decoration: none;
+}

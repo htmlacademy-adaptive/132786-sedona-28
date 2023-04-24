@@ -1,0 +1,37 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.form-input__label {
+  padding-left: 16px;
+
+  text-transform: uppercase;
+}
+
+.form-input__input {
+  width: 100%;
+  padding: 16px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  background-color: $color-white-smoke;
+  border: 0;
+
+  &::placeholder {
+    color: rgba($color-black, 0.3);
+  }
+
+  &--textarea {
+    height: 150px;
+    margin-bottom: 56px;
+
+    resize: none;
+  }
+}

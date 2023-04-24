@@ -1,0 +1,33 @@
+.benefit {
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $color-whisper;
+}
+
+.benefit__figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.benefit__figcaption {
+  padding: 18px;
+
+  color: $color-white;
+
+  background-color: $color-seagull;
+}
+
+.benefit__number::before,
+.benefit__number::after {
+  content: " — ";
+}
+
+.benefit__title {
+  font-size: 18px;
+}
+
+.benefit__image {
+  width: 100%;
+}

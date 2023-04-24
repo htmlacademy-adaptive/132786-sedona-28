@@ -1,0 +1,27 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 33px 0;
+
+  gap: 30px;
+}
+
+.main-footer__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.main-footer__copyright {
+  display: flex;
+  align-items: center;
+
+  color: $color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  gap: 12px;
+}

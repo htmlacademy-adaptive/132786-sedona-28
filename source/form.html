@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -93,7 +94,7 @@
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <legend class="form__legend">Посещённые достопримечательности:</legend>
+              <legend class="form__legend">Посещенные достопримечательности:</legend>
               <label class="form__field form-option">
                 <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="devils-bridge" checked>
                 <span class="form-option__icon form-option__icon--checkbox"></span>
@@ -124,9 +125,27 @@
               </label>
             </fieldset>
 
-            <button class="form__submit" type="submit">Отправить отзыв</button>
+            <button class="form__submit button" type="submit">Отправить отзыв</button>
             <span class="form__hint">* — Обязательные поля</span>
           </form>
+
+          <div class="form__modal modal visually-hidden">
+            <div class="modal__heading heading">
+              <h2 class="heading__title">Что-то пошло не так!</h2>
+              <p class="heading__description">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
+            </div>
+            <button class="modal__button button button--small-text" type="button">Ок</button>
+          </div>
+
+          <div class="form__modal modal visually-hidden">
+            <div class="modal__heading heading">
+              <h2 class="heading__title">Ваш отзыв отправлен!</h2>
+              <p class="heading__description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            </div>
+            <div class="modal__button-wrapper">
+              <button class="modal__button button button--small-text" type="button">Закрыть окно</button>
+            </div>
+          </div>
         </section>
       </main>
 
@@ -134,17 +153,17 @@
         <span class="main-footer__hashtag">#visitSedona</span>
           <ul class="main-footer__socials socials">
             <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener">
+              <a class="socials__link socials__link--vk button" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener">
                 <span class="visually-hidden">Страница города Седона во Вконтакте.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="nofollow noopener">
+              <a class="socials__link socials__link--telegram button" href="https://t.me/htmlacademy" target="_blank" rel="nofollow noopener">
                 <span class="visually-hidden">Страница города Седона в Telegram.</span>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="nofollow noopener">
+              <a class="socials__link socials__link--youtube button" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="nofollow noopener">
                 <span class="visually-hidden">Страница города Седона в YouTube.</span>
               </a>
             </li>
