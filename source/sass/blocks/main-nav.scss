@@ -1,12 +1,25 @@
 .main-nav__list {
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
 
-  margin-bottom: 0;
+  display: none;
+  margin: 0;
   padding: 0;
 
   list-style: none;
   text-align: center;
   text-transform: uppercase;
+
+  .is-nav-open & {
+    display: block;
+  }
+
+  .no-js & {
+    display: block;
+    position: relative;
+  }
 }
 
 .main-nav__logo {
