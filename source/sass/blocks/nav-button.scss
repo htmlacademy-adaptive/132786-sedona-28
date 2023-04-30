@@ -1,0 +1,64 @@
+.nav-button {
+  position: relative;
+
+  margin-right: 20px;
+
+  border: 0;
+  cursor: pointer;
+
+  &,
+  &::before,
+  &::after {
+    z-index: 3;
+
+    display: inline-block;
+    width: 23px;
+    height: 4px;
+
+    background-color: $color-seagull;
+
+    transition: transform 0.3s ease-in, background-color 0.3s ease-in;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: 9px;
+  }
+
+  &::after {
+    top: -9px;
+  }
+
+  .no-js & {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.is-nav-open .nav-button {
+  background-color: rgba($color-white, 0);
+
+  &::before,
+  &::after {
+    top: 0;
+
+    background-color: $color-white;
+  }
+
+  &::before {
+    transform: rotate(135deg);
+  }
+
+  &::after {
+    transform: rotate(-135deg);
+  }
+}

@@ -2,10 +2,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 389px;
+  height: 389px;
 
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
+
+  @media (min-width: $tablet-width) {
+    clip-path: none;
+  }
+
+  &--inner {
+    height: 160px;
+
+    background-position: bottom;
+  }
 }

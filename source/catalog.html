@@ -2,13 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
-      <header class="main-header">
-        <button class="main-header__toggle" type="button">
+      <header class="main-header no-js">
+        <button class="main-header__toggle nav-button" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
         </button>
         <nav class="main-header__nav main-nav">
@@ -36,7 +37,7 @@
       <main class="main-container">
         <section class="intro intro--inner">
           <h1 class="visually-hidden">Фото и видео из города Седона.</h1>
-          <img class="intro__image intro__image--inner" src="img/intro-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. &quot;Because the Grand Canyon sucks!&quot;" >
+          <img class="intro__image intro__image--inner" src="img/intro-inner-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. &quot;Because the Grand Canyon sucks!&quot;" >
         </section>
 
         <section class="gallery">
@@ -51,8 +52,10 @@
                   <img class="gallery__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дороги Седоны на фоне гор и заката.">
                 </a>
                 <figcaption class="gallery__figcaption">
-                  <h3 class="gallery__subtitle">Неродные просторы</h3>
-                  <span class="gallery__author">Автор фото: Борис</span>
+                  <div class="gallery__info">
+                    <h3 class="gallery__subtitle">Неродные просторы</h3>
+                    <span class="gallery__author">Автор фото: Борис</span>
+                  </div>
                   <span class="gallery__likes">1350</span>
                 </figcaption>
               </figure>
@@ -63,8 +66,10 @@
                   <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Флора Седоны на фоне скал.">
                 </a>
                 <figcaption class="gallery__figcaption">
-                  <h3 class="gallery__subtitle">Местная растительность</h3>
-                  <span class="gallery__author">Автор фото: Сергей</span>
+                  <div class="gallery__info">
+                    <h3 class="gallery__subtitle">Местная растительность</h3>
+                    <span class="gallery__author">Автор фото: Сергей</span>
+                  </div>
                   <span class="gallery__likes">143</span>
                 </figcaption>
               </figure>
@@ -75,8 +80,10 @@
                   <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Серпантины в горной лесистой местности.">
                 </a>
                 <figcaption class="gallery__figcaption">
-                  <h3 class="gallery__subtitle">Дорога на север</h3>
-                  <span class="gallery__author">Автор фото: Петр</span>
+                  <div class="gallery__info">
+                    <h3 class="gallery__subtitle">Дорога на север</h3>
+                    <span class="gallery__author">Автор фото: Петр</span>
+                  </div>
                   <span class="gallery__likes">96</span>
                 </figcaption>
               </figure>
@@ -86,9 +93,11 @@
                 <a class="gallery__link" href="#">
                   <img class="gallery__image" src="img/photo-4-desktop-1.jpg" width="280" height="280" alt="Вид на мост дьявола.">
                 </a>
-                <figcaption lcass="gallery__figcaption">
-                  <h3 class="gallery__subtitle">Мост дьявола</h3>
-                  <span class="gallery__author">Автор фото: Антон</span>
+                <figcaption class="gallery__figcaption">
+                  <div class="gallery__info">
+                    <h3 class="gallery__subtitle">Мост дьявола</h3>
+                    <span class="gallery__author">Автор фото: Антон</span>
+                  </div>
                   <span class="gallery__likes">254</span>
                 </figcaption>
               </figure>
@@ -133,5 +142,6 @@
           </a>
         </footer>
     </div>
+    <script src="../js/main-nav.js"></script>
   </body>
 </html>

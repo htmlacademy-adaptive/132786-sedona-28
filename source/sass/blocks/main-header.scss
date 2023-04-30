@@ -1,0 +1,12 @@
+.main-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 56px;
+}
+
+.main-header__nav {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

@@ -1,14 +1,39 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba($color-black, 0.3);
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+.modal__wrapper {
+  background-color: $color-white;
+  box-shadow: 0 7px 15px rgba($color-black-shadow, 0.15);
+}
+
 .modal__button {
-  margin: 0 70px;
   width: calc(100% - 140px);
+  margin: 0 70px 49px 70px;
 }
 
 .modal__button-wrapper {
-  background-color: $color-white-smoke;
   padding: 20px;
 
+  background-color: $color-white-smoke;
+
   .modal__button {
-    margin: 0;
     width: 100%;
+    margin: 0;
   }
 }
