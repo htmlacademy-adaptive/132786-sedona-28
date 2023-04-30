@@ -2,5 +2,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-height: 56px;
+  height: 56px;
+}
+
+.main-header__nav {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

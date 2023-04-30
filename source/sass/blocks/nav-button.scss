@@ -38,6 +38,10 @@
   .no-js & {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .is-nav-open .nav-button {

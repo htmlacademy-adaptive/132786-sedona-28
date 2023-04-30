@@ -13,12 +13,21 @@
   text-transform: uppercase;
 
   .is-nav-open & {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .no-js & {
-    display: block;
     position: relative;
+
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -46,6 +55,21 @@
   color: $color-white;
 
   background-color: $color-seagull;
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    padding: 18px 24px 17px 25px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-black;
+
+    background-color: transparent;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+  }
 }
 
 .main-nav__link {

@@ -6,3 +6,26 @@
 
   list-style: none;
 }
+
+.benefits__sublist {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  & .benefits__item {
+    padding: 60px 33px 60px 33px;
+  }
+
+  &--gray {
+    background-color: $color-whisper;
+  }
+
+  &--gray .benefits__item {
+    padding: 41px 33px 41px 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
