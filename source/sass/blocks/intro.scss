@@ -12,7 +12,12 @@
   clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
 
   @media (min-width: $tablet-width) {
-    clip-path: none;
+    height: 518px;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 95.7% 93.5%, 95.7% 89%, 50% 100%, 4.5% 89%, 4.5% 93.5%, 0 93%);
+  }
+
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 79.2% 93.5%, 79.2% 89%, 50% 100%, 20.8% 89%, 20.8% 93.6%, 0 89%);
   }
 
   &--inner {
@@ -20,4 +25,9 @@
 
     background-position: bottom;
   }
+}
+
+.intro__image {
+  height: 350px;
+  width: 461px;
 }

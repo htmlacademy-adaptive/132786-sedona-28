@@ -5,6 +5,11 @@
   padding: 33px 0;
 
   gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .main-footer__hashtag {
