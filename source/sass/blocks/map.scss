@@ -1,10 +1,20 @@
 .map {
+  position: relative;
+
   text-align: center;
 }
 
-.map__embed {
+.map__embed,
+.map__image {
   display: block;
-  border: 0;
   width: 100%;
   max-height: 350px;
+}
+
+.map__embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 0;
 }

@@ -17,8 +17,8 @@
 
 .form-input__input {
   width: 100%;
-  padding: 16px;
   max-width: 430px;
+  padding: 16px;
 
   font-weight: 700;
   font-size: 18px;
@@ -32,11 +32,26 @@
   }
 
   &--textarea {
+    align-self: center;
+    max-width: 768px;
     height: 150px;
     margin-bottom: 56px;
-    max-width: 768px;
-    align-self: center;
 
     resize: none;
+  }
+
+  &--phone,
+  &--email {
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 65px;
+  }
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
   }
 }
