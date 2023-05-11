@@ -5,7 +5,9 @@
 }
 
 .benefits__heading {
-  margin: 0 124px;
+  @media (min-width: $tablet-width) {
+    margin: 0 124px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 357px;

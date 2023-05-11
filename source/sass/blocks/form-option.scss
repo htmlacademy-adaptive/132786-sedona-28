@@ -2,12 +2,10 @@
 .form-option {
   display: flex;
   align-items: center;
+  width: 50%;
+  margin-bottom: 16px;
 
   gap: 16px;
-
-  &:not(:last-child) {
-    margin-bottom: 16px;
-  }
 }
 
 .form-option__label {

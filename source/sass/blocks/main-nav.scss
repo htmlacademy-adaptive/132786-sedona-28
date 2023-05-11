@@ -5,8 +5,10 @@
   z-index: 2;
 
   display: none;
+  width: 100%;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 
   list-style: none;
   text-align: center;
@@ -15,6 +17,10 @@
   .is-nav-open & {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
   }
 
   .no-js & {
@@ -57,7 +63,7 @@
   background-color: $color-seagull;
 
   @media (min-width: $tablet-width) {
-    width: 153px;
+    width: 20%;
     padding: 18px 24px 17px 25px;
 
     font-size: 14px;
@@ -66,8 +72,8 @@
 
     background-color: transparent;
 
-    &:nth-child(3) {
-      margin-left: auto;
+    &:nth-child(4n + 3) {
+      margin-left: 20%;
     }
   }
 }

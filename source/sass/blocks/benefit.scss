@@ -55,6 +55,11 @@
 }
 
 .benefit__figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
   padding: 18px;
 
   color: $color-white;
@@ -83,6 +88,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    max-width: 178px;
   }
 }
 
