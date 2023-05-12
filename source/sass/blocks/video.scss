@@ -1,12 +1,48 @@
 .video {
-  padding: 0 120px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
+  }
 }
 
 .video__player {
+  position: relative;
+
   text-align: center;
 }
 
 .video__player-preview {
+  width: 100%;
   margin: auto;
-  width: 66.7vw;
+}
+
+.video__player-control {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 48px;
+  height: 54px;
+
+  background-color: rgba($color-white, 0.7);
+  box-shadow: 0 4px 4px rgba($color-black, 0.25);
+  transform: translate(-50%, -50%);
+
+  transition: background-color 0.2s ease-in, transform 0.2s ease-in;
+
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+
+  &:hover {
+    background-color: $color-white;
+  }
+
+  &:active {
+    transform: translate(-50%, -48%);
+  }
 }

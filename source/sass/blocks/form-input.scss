@@ -1,6 +1,8 @@
 .form-input {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -15,6 +17,7 @@
 
 .form-input__input {
   width: 100%;
+  max-width: 430px;
   padding: 16px;
 
   font-weight: 700;
@@ -24,15 +27,44 @@
   background-color: $color-white-smoke;
   border: 0;
 
+  transition: background-color 0.3s ease;
+
   &::placeholder {
     color: rgba($color-black, 0.3);
   }
 
   &--textarea {
-    width: 100%;
+    align-self: center;
+    max-width: 768px;
     height: 150px;
     margin-bottom: 56px;
 
     resize: none;
+  }
+
+  &--phone,
+  &--email {
+    padding-right: 65px;
+
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+  }
+
+  &:hover {
+    background-color: $color-whisper-tint;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    outline: $color-whisper-tint solid 4px;
+    outline-offset: -4px;
   }
 }

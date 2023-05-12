@@ -5,6 +5,11 @@
   padding: 33px 0;
 
   gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .main-footer__hashtag {
@@ -23,5 +28,27 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  transition: color 0.3s ease;
+
   gap: 12px;
+
+  &:hover {
+    color: $color-seagull;
+
+    & .main-footer__copyright-logo path {
+      fill: $color-seagull;
+    }
+  }
+
+  &:active {
+    color: $color-pink-swan;
+
+    & .main-footer__copyright-logo path {
+      fill: $color-pink-swan;
+    }
+  }
+}
+
+.main-footer__copyright-logo path {
+  transition: fill 0.3s ease;
 }

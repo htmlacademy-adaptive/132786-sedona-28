@@ -18,18 +18,18 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .gallery__item {
-  padding: 25px 0;
-
   &--large {
     grid-column: 1 / -1;
   }
@@ -37,11 +37,30 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  &::before,
+  &:last-of-type::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: $color-gainsboro;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .gallery__figure {
   margin: 0;
-  background-color: $color-white-smoke;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white-smoke;
+  }
 
   @media (min-width: $desktop-width) {
     position: relative;
@@ -49,9 +68,11 @@
 }
 
 .gallery__image {
+  display: block;
   width: 100%;
   margin-bottom: 15px;
-  display: block;
+  padding-top: 24px;
+
   object-fit: cover;
 
   .gallery__item--large & {
@@ -60,25 +81,33 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-top: 0;
   }
 }
 
 .gallery__figcaption {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 100%;
+  padding-bottom: 25px;
+
+  gap: 11px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 22px 20px 15px 20px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    z-index: 1;
     bottom: 0;
+    z-index: 1;
+
     color: $color-white;
+
     background-color: rgba($color-black, 0.3);
   }
 }
@@ -94,15 +123,46 @@
   margin-bottom: 11px;
 }
 
-.gallery__likes {
-  display: block;
+.gallery__like-button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
   font-weight: 700;
 
-  &::before {
-    content: url("../img/icon-like.svg");
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 
-    width: 23px;
-    height: 21px;
-    margin-right: 14px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+
+  gap: 9px;
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
+
+  &:hover {
+    color: rgba($color-black, 0.6);
+
+    background-color: rgba($color-black, 0.2);
+
+    @media (min-width: $desktop-width) {
+      color: rgba($color-white, 0.9);
+
+      background-color: rgba($color-black, 0.5);
+    }
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.gallery__like-icon path {
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+
+    fill: $color-white;
   }
 }
