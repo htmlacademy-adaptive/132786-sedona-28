@@ -35,6 +35,18 @@
     top: -9px;
   }
 
+  &:hover,
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba($color-seagull, 0.6);
+  }
+
+  &:active,
+  &:active::before,
+  &:active::after {
+    background-color: rgba($color-seagull, 0.3);
+  }
+
   .no-js & {
     display: none;
   }
@@ -60,5 +72,15 @@
 
   &::after {
     transform: rotate(-135deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba($color-white, 0.6);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($color-white, 0.3);
   }
 }

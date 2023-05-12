@@ -63,13 +63,15 @@
     }
   }
 
-  &--half:nth-child(odd) {
+  &--half:first-child {
     @media (min-width: $tablet-width) {
       position: relative;
 
       padding-right: 28px;
+    }
 
-      &::before {
+    &::after {
+      @media (min-width: $tablet-width) {
         content: "";
         position: absolute;
         top: 0;

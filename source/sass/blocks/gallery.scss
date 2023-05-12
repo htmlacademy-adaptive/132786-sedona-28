@@ -126,15 +126,15 @@
 .gallery__like-button {
   display: flex;
   align-items: center;
+  padding: 10px;
 
   font-weight: 700;
 
   background-color: transparent;
   border: 0;
-  border-radius: 5px;
   cursor: pointer;
 
-  transition: transform 0.1s ease;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 
   gap: 9px;
 

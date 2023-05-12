@@ -27,6 +27,8 @@
   background-color: $color-white-smoke;
   border: 0;
 
+  transition: background-color 0.3s ease;
+
   &::placeholder {
     color: rgba($color-black, 0.3);
   }
@@ -42,9 +44,10 @@
 
   &--phone,
   &--email {
+    padding-right: 65px;
+
     background-repeat: no-repeat;
     background-position: right;
-    padding-right: 65px;
   }
 
   &--phone {
@@ -53,5 +56,15 @@
 
   &--email {
     background-image: url("../img/icon-mail.svg");
+  }
+
+  &:hover {
+    background-color: $color-whisper-tint;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    outline: $color-whisper-tint solid 4px;
+    outline-offset: -4px;
   }
 }
