@@ -14,7 +14,7 @@
         </button>
         <nav class="main-header__nav main-nav">
           <a class="main-nav__logo" href="index.html" >
-            <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип туристического портала города Седона.">
+            <img src="img/logos/sedona-logo.svg" width="185" height="96" alt="Логотип туристического портала города Седона.">
           </a>
 
           <ul class="main-nav__list">
@@ -37,7 +37,7 @@
       <main class="main-container">
         <section class="intro intro--inner">
           <h1 class="visually-hidden">Фото и видео из города Седона.</h1>
-          <img class="intro__image intro__image--inner" src="img/intro-inner-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. &quot;Because the Grand Canyon sucks!&quot;" >
+          <img class="intro__image intro__image--inner" src="img/intro/intro-inner-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. &quot;Because the Grand Canyon sucks!&quot;" >
         </section>
 
         <section class="gallery">
@@ -49,7 +49,11 @@
             <li class="gallery__item gallery__item--large">
               <figure class="gallery__figure">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дороги Седоны на фоне гор и заката.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/gallery-1-desktop.jpg 1x, img/gallery/gallery-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/gallery/gallery-1-tablet.jpg 1x, img/gallery/gallery-1-tablet@2x.jpg 2x">
+                    <img class="gallery__image" src="img/gallery/gallery-1-mobile.jpg" srcset="img/gallery/gallery-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дороги Седоны на фоне гор и заката.">
+                  </picture>
                 </a>
                 <figcaption class="gallery__figcaption">
                   <div class="gallery__info">
@@ -69,7 +73,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Флора Седоны на фоне скал.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/gallery-2-desktop.jpg 1x, img/gallery/gallery-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/gallery/gallery-2-tablet.jpg 1x, img/gallery/gallery-2-tablet@2x.jpg 2x">
+                    <img class="gallery__image" src="img/gallery/gallery-2-mobile.jpg" srcset="img/gallery/gallery-2-mobile@2x.jpg 2x" width="280" height="280" alt="Флора Седоны на фоне скал.">
+                  </picture>
                 </a>
                 <figcaption class="gallery__figcaption">
                   <div class="gallery__info">
@@ -89,7 +97,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Серпантины в горной лесистой местности.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/gallery-3-desktop.jpg 1x, img/gallery/gallery-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/gallery/gallery-3-tablet.jpg 1x, img/gallery/gallery-3-tablet@2x.jpg 2x">
+                    <img class="gallery__image" src="img/gallery/gallery-3-mobile.jpg" srcset="img/gallery/gallery-3-mobile@2x.jpg 2x" width="280" height="280" alt="Серпантины в горной лесистой местности.">
+                  </picture>
                 </a>
                 <figcaption class="gallery__figcaption">
                   <div class="gallery__info">
@@ -109,7 +121,11 @@
             <li class="gallery__item">
               <figure class="gallery__figure">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/photo-4-desktop-1.jpg" width="280" height="280" alt="Вид на мост дьявола.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/gallery/gallery-4-desktop.jpg 1x, img/gallery/gallery-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/gallery/gallery-4-tablet.jpg 1x, img/gallery/gallery-4-tablet@2x.jpg 2x">
+                    <img class="gallery__image" src="img/gallery/gallery-4-mobile.jpg" srcset="img/gallery/gallery-4-mobile@2x.jpg 2x" width="280" height="280" alt="Вид на мост дьявола.">
+                  </picture>
                 </a>
                 <figcaption class="gallery__figcaption">
                   <div class="gallery__info">
@@ -135,7 +151,11 @@
             <p class="heading__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__player">
-            <img class="video__player-preview" src="img/video-preview.jpg" width="280" height="177" alt="Превью видеопрезентации о Седоне." >
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/thumbnails/video-desktop.jpg 1x, img/thumbnails/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/thumbnails/video-tablet.jpg 1x, img/thumbnails/video-tablet@2x.jpg 2x">
+              <img class="video__player-preview" src="img/thumbnails/video-mobile.jpg" srcset="img/thumbnails/video-mobile@2x.jpg 2x" width="280" height="177" alt="Превью видеопрезентации о Седоне.">
+            </picture>
             <a class="video__player-control" href="#">
               <span class="visually-hidden">Воспроизвести видео.</span>
             </a>

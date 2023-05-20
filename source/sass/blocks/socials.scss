@@ -29,15 +29,15 @@
   }
 
   &--vk::before {
-    content: url("../img/icon-vk.svg");
+    content: url("../img/icons/icon-vk.svg");
   }
 
   &--telegram::before {
-    content: url("../img/icon-telegram.svg");
+    content: url("../img/icons/icon-telegram.svg");
   }
 
   &--youtube::before {
-    content: url("../img/icon-youtube.svg");
+    content: url("../img/icons/icon-youtube.svg");
   }
 
   &--vk:active::before,

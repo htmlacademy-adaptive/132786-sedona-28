@@ -86,15 +86,15 @@
   }
 
   &--accommodation::before {
-    background-image: url("../img/icon-house.svg");
+    background-image: url("../img/icons/icon-house.svg");
   }
 
   &--cuisine::before {
-    background-image: url("../img/icon-food.svg");
+    background-image: url("../img/icons/icon-food.svg");
   }
 
   &--souvenirs::before {
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icons/icon-gift.svg");
   }
 
   &--souvenirs {
@@ -113,7 +113,13 @@
     display: grid;
 
     grid-auto-flow: dense;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &--reversed {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
 
@@ -134,7 +140,7 @@
 
   .benefit__figure--reversed & {
     @media (min-width: $tablet-width) {
-      grid-column: 3 / 4;
+      grid-column: 2 / 3;
     }
   }
 }
@@ -166,19 +172,18 @@
   width: 100%;
   height: auto;
   max-height: 260px;
+  display: block;
 
   object-fit: cover;
 
   @media (min-width: $tablet-width) {
-    max-height: 255px;
-
-    grid-column: 2 / 4;
+    max-height: 256px;
   }
 
 
   .benefit__figure--reversed & {
     @media (min-width: $tablet-width) {
-      grid-column: 1 / 3;
+      grid-column: 1 / 2;
     }
   }
 }
