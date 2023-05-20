@@ -11,8 +11,28 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/intro-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     height: 518px;
+
+    background-image: url("../img/intro/intro-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/intro-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 518px;
+
+    background-image: url("../img/intro/intro-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/intro-desktop@2x.jpg");
+    }
   }
 
   &--inner {
