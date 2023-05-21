@@ -67,6 +67,10 @@
 }
 
 .intro__image {
-  width: 461px;
-  height: 350px;
+  transform: translateY(2px);
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: auto;
+  }
 }

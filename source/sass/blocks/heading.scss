@@ -1,8 +1,11 @@
 .heading {
-  padding: 32px 18px;
+  padding: 32px 18px 22px 18px;
 
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     padding: 43px 0 25px 0;
@@ -10,11 +13,13 @@
 }
 
 .heading__title {
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  max-width: 270px;
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   color: $color-black;
 
   @media (min-width: $tablet-width) {
@@ -23,6 +28,7 @@
 
   &--large {
     font-size: 21px;
+    margin-bottom: 6px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
