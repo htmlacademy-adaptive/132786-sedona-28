@@ -1,9 +1,10 @@
 .heading {
-  text-align: center;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  text-align: center;
+  text-transform: uppercase;
 
   &--compact &__title {
     margin-bottom: 11px;
@@ -11,9 +12,9 @@
 }
 
 .heading__title {
+  max-width: 270px;
   margin-top: 0;
   margin-bottom: 21px;
-  max-width: 270px;
 
   font-weight: 700;
   font-size: 18px;
@@ -25,8 +26,9 @@
   }
 
   &--large {
-    font-size: 21px;
     margin-bottom: 6px;
+
+    font-size: 21px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
@@ -35,9 +37,10 @@
 }
 
 .heading__description {
+  max-width: 275px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  max-width: 275px;
   color: $color-night-rider;
 }

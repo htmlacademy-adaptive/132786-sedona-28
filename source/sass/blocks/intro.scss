@@ -37,9 +37,9 @@
 
   &--inner {
     height: 158px;
+    margin-bottom: 5px;
 
     background-position: bottom;
-    margin-bottom: 5px;
 
     @media (min-width: $tablet-width) {
       height: 290px;
@@ -51,6 +51,7 @@
 
     & .intro__image {
       width: 229px;
+
       transform: translateY(-8px);
     }
   }
