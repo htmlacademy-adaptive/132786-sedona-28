@@ -1,9 +1,34 @@
 .cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 21px;
+  }
+}
+
+.cta__heading {
+  margin-top: 7px;
+  padding: 31px 0 18px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 80px 18px 80px;
+  }
 }
 
 .cta__link {
-  margin: 0 18px 49px 18px;
   width: calc(100% - 36px);
   max-width: 458px;
+  margin: 0 18px 49px 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 13px 18px 55px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 13px 18px 68px 18px;
+  }
 }

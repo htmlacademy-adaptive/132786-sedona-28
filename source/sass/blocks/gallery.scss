@@ -10,6 +10,10 @@
   }
 }
 
+.gallery__heading {
+  padding: 32px 0 31px 0;
+}
+
 .gallery__list {
   margin: 0;
   padding: 0;
@@ -32,6 +36,12 @@
 .gallery__item {
   &--large {
     grid-column: 1 / -1;
+
+    & .gallery__figcaption {
+      @media (min-width: $desktop-width) {
+        padding-left: 21px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -67,6 +77,10 @@
   }
 }
 
+.gallery__link {
+  display: block;
+}
+
 .gallery__image {
   display: block;
   width: 100%;
@@ -90,7 +104,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 
   gap: 11px;
 
@@ -98,7 +112,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 20px 12px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,52 +120,81 @@
     bottom: 0;
     z-index: 1;
 
+    padding: 22px 20px 12px 25px;
+
     color: $color-white;
 
     background-color: rgba($color-black, 0.3);
   }
 }
 
-.gallery__subtitle {
-  margin: 0;
+.gallery__info {
+  margin-bottom: 2px;
+}
 
+.gallery__subtitle {
+  margin: 0 0 2px 0;
+
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
 .gallery__author {
   width: 100%;
   margin-bottom: 11px;
+
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .gallery__like-button {
+  position: relative;
+
   display: flex;
-  align-items: center;
-  padding: 10px;
+  align-items: flex-end;
+  padding: 0;
 
   font-weight: 700;
+  font-size: 14px;
+  font-family: inherit;
 
   background-color: transparent;
   border: 0;
   cursor: pointer;
 
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  transition: transform 0.1s ease;
 
-  gap: 9px;
+  gap: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+
+    transition: background-color 0.3s ease;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+    margin-top: 7px;
+
+    gap: 9px;
+  }
 
   @media (min-width: $desktop-width) {
     color: $color-white;
   }
 
-  &:hover {
-    color: rgba($color-black, 0.6);
-
-    background-color: rgba($color-black, 0.2);
-
-    @media (min-width: $desktop-width) {
-      color: rgba($color-white, 0.9);
-
-      background-color: rgba($color-black, 0.5);
-    }
+  &:hover::after {
+    background-color: rgba($color-black, 0.5);
   }
 
   &:active {
@@ -159,10 +202,10 @@
   }
 }
 
-.gallery__like-icon path {
+.gallery__like-icon {
+  opacity: 0.3;
+
   @media (min-width: $desktop-width) {
     opacity: 1;
-
-    fill: $color-white;
   }
 }

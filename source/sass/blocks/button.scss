@@ -1,11 +1,12 @@
 .button {
   display: inline-block;
   max-width: 100%;
-  padding: 17px 0 12px 0;
+  padding: 16px 49px 16px 49px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  font-family: inherit;
   text-align: center;
   color: $color-white;
   text-transform: uppercase;
@@ -33,5 +34,13 @@
 
   &--small-text {
     font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+    }
+  }
+
+  &--icon {
+    padding: 16px 0 16px 0;
   }
 }

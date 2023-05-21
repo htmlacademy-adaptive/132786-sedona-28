@@ -21,7 +21,7 @@
   padding: 16px;
 
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
 
   background-color: $color-white-smoke;
@@ -37,9 +37,19 @@
     align-self: center;
     max-width: 768px;
     height: 150px;
-    margin-bottom: 56px;
+    margin-bottom: 33px;
+    padding: 18px 16px;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-family: inherit;
 
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      height: 160px;
+      margin-bottom: 23px;
+    }
   }
 
   &--phone,

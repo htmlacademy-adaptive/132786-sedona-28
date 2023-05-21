@@ -37,15 +37,32 @@
 
   &--inner {
     height: 158px;
+    margin-bottom: 5px;
 
     background-position: bottom;
 
     @media (min-width: $tablet-width) {
       height: 290px;
+      margin-bottom: 33px;
     }
 
     @media (min-width: $desktop-width) {
       height: 301px;
+      margin-bottom: 66px;
+    }
+
+    & .intro__image {
+      width: 229px;
+
+      transform: translateY(-8px);
+
+      @media (min-width: $tablet-width) {
+        width: 457px;
+      }
+
+      @media (min-width: $desktop-width) {
+        transform: translate(-3px, -9px);
+      }
     }
   }
 
@@ -67,6 +84,12 @@
 }
 
 .intro__image {
-  width: 461px;
-  height: 350px;
+  transform: translateY(2px);
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: auto;
+
+    transform: translateY(-7px);
+  }
 }

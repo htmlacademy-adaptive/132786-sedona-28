@@ -1,10 +1,15 @@
 .socials {
   display: flex;
+  margin: 14px 0 10px 0;
   padding: 0;
 
   list-style: none;
 
   gap: 6px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 39px;
+  }
 }
 
 .socials__item {
