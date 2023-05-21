@@ -39,6 +39,7 @@
     height: 158px;
 
     background-position: bottom;
+    margin-bottom: 5px;
 
     @media (min-width: $tablet-width) {
       height: 290px;
@@ -46,6 +47,11 @@
 
     @media (min-width: $desktop-width) {
       height: 301px;
+    }
+
+    & .intro__image {
+      width: 229px;
+      transform: translateY(-8px);
     }
   }
 

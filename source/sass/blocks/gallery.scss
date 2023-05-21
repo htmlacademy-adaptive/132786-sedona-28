@@ -10,6 +10,10 @@
   }
 }
 
+.gallery__heading {
+  padding: 32px 0 22px 0;
+}
+
 .gallery__list {
   margin: 0;
   padding: 0;
@@ -67,6 +71,10 @@
   }
 }
 
+.gallery__link {
+  display: block;
+}
+
 .gallery__image {
   display: block;
   width: 100%;
@@ -90,7 +98,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 
   gap: 11px;
 
@@ -112,21 +120,31 @@
   }
 }
 
-.gallery__subtitle {
-  margin: 0;
+.gallery__info {
+  margin-bottom: 2px;
+}
 
+.gallery__subtitle {
+  margin: 0 0 2px 0;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .gallery__author {
   width: 100%;
   margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .gallery__like-button {
+  position: relative;
+  font-size: 14px;
+  padding: 0;
+
   display: flex;
-  align-items: center;
-  padding: 10px;
+  align-items: flex-end;
 
   font-weight: 700;
 
@@ -134,24 +152,31 @@
   border: 0;
   cursor: pointer;
 
-  transition: background-color 0.3s ease, transform 0.1s ease;
+  transition: transform 0.1s ease;
 
-  gap: 9px;
+  gap: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+
+    transition: background-color 0.3s ease;
+  }
 
   @media (min-width: $desktop-width) {
     color: $color-white;
   }
 
-  &:hover {
-    color: rgba($color-black, 0.6);
-
-    background-color: rgba($color-black, 0.2);
-
-    @media (min-width: $desktop-width) {
-      color: rgba($color-white, 0.9);
-
-      background-color: rgba($color-black, 0.5);
-    }
+  &:hover::after {
+    background-color: rgba($color-black, 0.5);
   }
 
   &:active {
