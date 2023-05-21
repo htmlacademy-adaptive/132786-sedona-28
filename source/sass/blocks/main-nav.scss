@@ -31,6 +31,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    z-index: 1;
 
     display: flex;
     align-items: center;
@@ -48,6 +49,10 @@
   height: 96px;
 
   transform: translate(-50%, 0);
+
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+  }
 }
 
 .main-nav__item {
