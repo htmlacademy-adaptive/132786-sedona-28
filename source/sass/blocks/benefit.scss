@@ -11,6 +11,9 @@
   background-color: $color-whisper;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    padding: 42px 18px 41px 18px;
+
     border-bottom: 0;
   }
 
@@ -23,6 +26,10 @@
     width: 100%;
 
     border-bottom: 1px solid $color-light-grey-tint;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &:last-child::after,
@@ -67,11 +74,16 @@
 
     & .benefit__title {
       margin: 14px 0 16px 0;
+
+      @media (min-width: $tablet-width) {
+        margin: 20px 0 23px 0;
+      }
     }
 
     @media (min-width: $tablet-width) {
       flex-direction: column;
-      padding: 69px 50px;
+      align-items: center;
+      padding: 50px 44px 60px 44px;
     }
 
     @media (min-width: $desktop-width) {
@@ -119,6 +131,10 @@
 
   &--souvenirs {
     margin-bottom: 41px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -158,6 +174,12 @@
     max-width: 270px;
   }
 
+  & .benefit__title {
+    @media (min-width: $tablet-width) {
+      max-width: 150px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 52px 33px 31px 33px;
   }
@@ -181,7 +203,8 @@
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
-    max-width: 178px;
+    max-width: 158px;
+    margin: 0 0 14px 0;
 
     font-size: 21px;
   }
@@ -190,6 +213,10 @@
 .benefit__number {
   display: inline-block;
   margin: 0 0 17px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 23px 0;
+  }
 }
 
 .benefit__image {
@@ -214,6 +241,18 @@
 .benefit__description {
   max-width: 255px;
   margin: 0;
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 200px;
+  }
 
   .benefit--feature & {
     box-sizing: content-box;
