@@ -91,7 +91,7 @@
 }
 
 .heading__description {
-  max-width: 235px;
+  max-width: 275px;
 
   font-weight: 400;
   font-size: 14px;
@@ -99,6 +99,6 @@
   color: $color-night-rider;
 
   @media (min-width: $tablet-width) {
-    max-width: 290px;
+    max-width: 485px;
   }
 }
