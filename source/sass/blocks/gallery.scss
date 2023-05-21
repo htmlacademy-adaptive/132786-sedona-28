@@ -36,6 +36,12 @@
 .gallery__item {
   &--large {
     grid-column: 1 / -1;
+
+    & .gallery__figcaption {
+      @media (min-width: $desktop-width) {
+        padding-left: 21px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -114,6 +120,8 @@
     bottom: 0;
     z-index: 1;
 
+    padding: 22px 20px 12px 25px;
+
     color: $color-white;
 
     background-color: rgba($color-black, 0.3);
@@ -175,8 +183,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 7px;
     align-self: flex-start;
+    margin-top: 7px;
+
     gap: 9px;
   }
 

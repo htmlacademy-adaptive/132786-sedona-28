@@ -6,6 +6,10 @@
   list-style: none;
 
   gap: 6px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 39px;
+  }
 }
 
 .socials__item {

@@ -11,6 +11,10 @@
     justify-content: space-around;
     padding: 9px 11px 32px 13px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 11px 20px 13px;
+  }
 }
 
 .main-footer__hashtag {

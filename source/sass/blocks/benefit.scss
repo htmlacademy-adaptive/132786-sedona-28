@@ -17,6 +17,10 @@
     border-bottom: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 54px 18px 50px 18px;
+  }
+
   &::after {
     content: "";
     position: relative;
@@ -87,7 +91,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 60px 33px;
+      padding: 60px 33px 69px 33px;
     }
   }
 
@@ -127,6 +131,10 @@
     margin-top: 4px;
 
     background-image: url("../img/icons/icon-gift.svg");
+
+    @media (min-width: $desktop-width) {
+      margin-top: 10px;
+    }
   }
 
   &--souvenirs {
@@ -155,6 +163,12 @@
   &--reversed {
     @media (min-width: $tablet-width) {
       grid-template-columns: 2fr 1fr;
+    }
+
+    & .benefit__description {
+      @media (min-width: $desktop-width) {
+        width: 70%;
+      }
     }
   }
 }
@@ -254,6 +268,10 @@
     max-width: 200px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 290px;
+  }
+
   .benefit--feature & {
     box-sizing: content-box;
     padding-left: 47px;
@@ -265,6 +283,10 @@
       padding-left: 0;
 
       text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 300px;
     }
   }
 }

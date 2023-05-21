@@ -18,22 +18,98 @@
 }
 
 .modal__wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 45px 0 35px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
   background-color: $color-white;
   box-shadow: 0 7px 15px rgba($color-black-shadow, 0.15);
+
+  .modal--success & {
+    max-width: 640px;
+    padding: 45px 0 0 0;
+  }
+}
+
+.modal__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__title {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  .modal--success & {
+    @media (min-width: $tablet-width) {
+      max-width: 400px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__description {
+  max-width: 230px;
+  margin: 26px 0 28px 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 280px;
+    margin: 25px 0 70px 0;
+  }
+
+  .modal--success & {
+    margin: 26px 0 10px 0;
+
+    @media (min-width: $tablet-width) {
+      max-width: 450px;
+    }
+  }
 }
 
 .modal__button {
   width: calc(100% - 140px);
-  margin: 0 70px 49px 70px;
+  margin: 0 70px 0 70px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 130px);
+    margin: 0 65px 10px 65px;
+  }
+
+  .modal--success & {
+    width: 100%;
+  }
 }
 
 .modal__button-wrapper {
+  margin-top: 40px;
   padding: 20px;
 
   background-color: $color-white-smoke;
 
+  .modal--success & {
+    @media (min-width: $tablet-width) {
+      padding: 44px 91px;
+    }
+  }
+
   .modal__button {
-    width: 100%;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
   }
 }
