@@ -2,7 +2,7 @@
   padding: 17px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 60px;
+    padding: 56px 60px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,12 +12,20 @@
 
 .video__heading {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+  }
 }
 
 .video__player {
   position: relative;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .video__player-preview {

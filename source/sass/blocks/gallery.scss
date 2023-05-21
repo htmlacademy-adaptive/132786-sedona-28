@@ -106,7 +106,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 20px 12px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -172,6 +172,12 @@
     transform: translate(-50%, -50%);
 
     transition: background-color 0.3s ease;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+    align-self: flex-start;
+    gap: 9px;
   }
 
   @media (min-width: $desktop-width) {

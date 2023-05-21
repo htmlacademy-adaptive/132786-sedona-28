@@ -43,6 +43,7 @@
 
     @media (min-width: $tablet-width) {
       height: 290px;
+      margin-bottom: 33px;
     }
 
     @media (min-width: $desktop-width) {
@@ -53,6 +54,10 @@
       width: 229px;
 
       transform: translateY(-8px);
+
+      @media (min-width: $tablet-width) {
+        width: 457px;
+      }
     }
   }
 
@@ -77,8 +82,9 @@
   transform: translateY(2px);
 
   @media (min-width: $tablet-width) {
-    transform: translateY(-7px);
     width: 461px;
     height: auto;
+
+    transform: translateY(-7px);
   }
 }
