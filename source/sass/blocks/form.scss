@@ -18,13 +18,16 @@
 
   display: flex;
   flex-grow: 1;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 100%;
   margin: 0;
-  padding: 0 0 45px 0;
+  padding: 15px 0 24px 0;
 
   border: 0;
+
+  &:first-child {
+    padding: 0 0 24px 0;
+  }
 
   &::before {
     content: "";
@@ -42,6 +45,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
     border-top: 1px solid $color-gainsboro;
   }
 
@@ -88,7 +94,7 @@
 .form__legend {
   float: left;
   width: 100%;
-  margin: 24px auto 28px auto;
+  margin: 24px auto 20px auto;
 
   font-weight: 700;
   font-size: 18px;
@@ -125,7 +131,10 @@
 
 .form__hint {
   display: block;
+  margin-bottom: 31px;
 
+  font-size: 12px;
+  line-height: 21px;
   text-align: right;
   color: rgba($color-night-rider, 0.6);
   text-transform: uppercase;
