@@ -45,6 +45,11 @@
     font-family: inherit;
 
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      height: 160px;
+      margin-bottom: 23px;
+    }
   }
 
   &--phone,

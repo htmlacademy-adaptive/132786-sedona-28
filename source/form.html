@@ -42,8 +42,8 @@
 
         <section class="feedback">
           <div class="feedback__heading heading heading--inner">
-            <h2 class="heading__title">Оставьте свой отзыв</h2>
-            <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых Вами достопримечательностях</p>
+            <h2 class="heading__title heading__title--compact">Оставьте свой отзыв</h2>
+            <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещённых Вами достопримечательностях</p>
           </div>
 
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -77,45 +77,49 @@
 
             <fieldset class="form__fieldset">
               <legend class="form__legend">Ваше общее впечатление:</legend>
-              <label class="form__field form-option">
-                <input class="form-option__input visually-hidden" type="radio" name="attitude" value="positive" checked>
-                <span class="form-option__icon form-option__icon--radio"></span>
-                <span class="form-option__label">Скорее положительное</span>
-              </label>
-              <label class="form__field form-option">
-                <input class="form-option__input visually-hidden" type="radio" name="attitude" value="negative">
-                <span class="form-option__icon form-option__icon--radio"></span>
-                <span class="form-option__label">Скорее отрицательное</span>
-              </label>
-              <label class="form__field form-option">
-                <input class="form-option__input visually-hidden" type="radio" name="attitude" value="obscure">
-                <span class="form-option__icon form-option__icon--radio"></span>
-                <span class="form-option__label">Затрудняюсь ответить</span>
-              </label>
+              <div class="form__group form__group--radio">
+                <label class="form__field form-option">
+                  <input class="form-option__input visually-hidden" type="radio" name="attitude" value="positive" checked>
+                  <span class="form-option__icon form-option__icon--radio"></span>
+                  <span class="form-option__label">Скорее положительное</span>
+                </label>
+                <label class="form__field form-option">
+                  <input class="form-option__input visually-hidden" type="radio" name="attitude" value="negative">
+                  <span class="form-option__icon form-option__icon--radio"></span>
+                  <span class="form-option__label">Скорее отрицательное</span>
+                </label>
+                <label class="form__field form-option">
+                  <input class="form-option__input visually-hidden" type="radio" name="attitude" value="obscure">
+                  <span class="form-option__icon form-option__icon--radio"></span>
+                  <span class="form-option__label">Затрудняюсь ответить</span>
+                </label>
+              </div>
             </fieldset>
 
             <fieldset class="form__fieldset">
               <legend class="form__legend">Посещенные достопримечательности:</legend>
-              <label class="form__field form-option">
-                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="devils-bridge" checked>
-                <span class="form-option__icon form-option__icon--checkbox"></span>
-                <span class="form-option__label">Мост Дьявола</span>
-              </label>
-              <label class="form__field form-option">
-                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="bell-rock" checked>
-                <span class="form-option__icon form-option__icon--checkbox"></span>
-                <span class="form-option__label">Гора-Колокол</span>
-              </label>
-              <label class="form__field form-option">
-                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="slide-park" checked>
-                <span class="form-option__icon form-option__icon--checkbox"></span>
-                <span class="form-option__label">Слайд-парк</span>
-              </label>
-              <label class="form__field form-option">
-                <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="red-rocks">
-                <span class="form-option__icon form-option__icon--checkbox"></span>
-                <span class="form-option__label">Красные скалы</span>
-              </label>
+              <div class="form__group form__group--checkbox">
+                <label class="form__field form-option">
+                  <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="devils-bridge" checked>
+                  <span class="form-option__icon form-option__icon--checkbox"></span>
+                  <span class="form-option__label">Мост Дьявола</span>
+                </label>
+                <label class="form__field form-option">
+                  <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="bell-rock" checked>
+                  <span class="form-option__icon form-option__icon--checkbox"></span>
+                  <span class="form-option__label">Гора-Колокол</span>
+                </label>
+                <label class="form__field form-option">
+                  <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="slide-park" checked>
+                  <span class="form-option__icon form-option__icon--checkbox"></span>
+                  <span class="form-option__label">Слайд-парк</span>
+                </label>
+                <label class="form__field form-option">
+                  <input class="form-option__input visually-hidden" type="checkbox" name="attractions" value="red-rocks">
+                  <span class="form-option__icon form-option__icon--checkbox"></span>
+                  <span class="form-option__label">Красные скалы</span>
+                </label>
+              </div>
             </fieldset>
 
             <fieldset class="form__fieldset">

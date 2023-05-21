@@ -2,18 +2,9 @@
 .form-option {
   display: flex;
   align-items: center;
-  width: 100%;
-  margin-bottom: 16px;
+  max-width: 100%;
 
   gap: 16px;
-
-  &:last-child {
-    margin-bottom: -16px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 50%;
-  }
 }
 
 .form-option__label {

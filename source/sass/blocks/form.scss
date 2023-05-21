@@ -21,7 +21,7 @@
   flex-direction: column;
   width: 100%;
   margin: 0;
-  padding: 15px 0 24px 0;
+  padding: 18px 0 12px 0;
 
   border: 0;
 
@@ -47,17 +47,20 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0 24px 0;
 
     border-top: 1px solid $color-gainsboro;
   }
 
   &--half {
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 
     @media (min-width: $tablet-width) {
       width: calc(50% - 28px);
-      margin-bottom: 58px;
+      margin-bottom: 39px;
 
       border-top: 0;
     }
@@ -65,7 +68,7 @@
 
   &--half:nth-child(even) {
     @media (min-width: $tablet-width) {
-      padding-left: 28px;
+      padding: 0 0 0 28px;
     }
   }
 
@@ -80,10 +83,10 @@
       @media (min-width: $tablet-width) {
         content: "";
         position: absolute;
-        top: 0;
+        top: -55px;
         right: 0;
 
-        height: calc(100% + 15px);
+        height: calc(100% + 40px);
 
         border-right: 1px solid $color-gainsboro;
       }
@@ -106,6 +109,7 @@
     float: none;
     width: 400px;
     padding: 0 45px;
+    margin: 24px auto 13px auto;
 
     font-size: 21px;
   }
@@ -114,7 +118,39 @@
     width: auto;
 
     @media (min-width: $tablet-width) {
+      margin: 0 0 27px 0;
       padding: 0;
+    }
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    width: 100%;
+
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--radio {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+      padding: 0 36px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 18px;
+      padding: 0 84px;
+
+      column-gap: 31px;
     }
   }
 }
@@ -123,9 +159,12 @@
   width: 100%;
 
   text-align: center;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-top: 0;
+    margin-bottom: 77px;
   }
 }
 
@@ -140,6 +179,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    align-self: center;
+    margin-top: 23px;
+
+    font-size: 14px;
   }
 }
