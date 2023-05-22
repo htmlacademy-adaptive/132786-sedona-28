@@ -13,6 +13,23 @@
   max-height: 350px;
 }
 
+.map__image-wrapper {
+  position: relative;
+
+  &::after {
+    content: url("../img/icons/icon-marker.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 27px;
+    height: 27px;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
 .map__embed {
   position: absolute;
   top: 0;
