@@ -60,10 +60,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/benefits/photo-1-desktop.webp 1x, img/benefits/photo-1-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/benefits/photo-1-tablet.webp 1x, img/benefits/photo-1-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/benefits/photo-1-tablet.webp 1x, img/benefits/photo-1-tablet@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/benefits/photo-1-desktop.jpg 1x, img/benefits/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/benefits/photo-1-tablet.jpg 1x, img/benefits/photo-1-tablet@2x.jpg 2x">
-                  <img class="benefit__image" src="img/benefits/photo-1-mobile.jpg" srcset="img/benefits/photo-1-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на одно из заведений города.">
+                  <img class="benefit__image" src="img/benefits/photo-1-mobile.webp" srcset="img/benefits/photo-1-mobile@2x.webp 2x" width="320" height="260" alt="Вид на одно из заведений города.">
                 </picture>
               </figure>
             </li>
@@ -77,7 +74,7 @@
             </li>
             <li class="benefits__item benefit benefit--feature benefit--souvenirs">
               <h3 class="benefit__title">Сувениры</h3>
-              <p class="benefit__description">Не только китайского, <br />но&nbsp;и местного производства!</p>
+              <p class="benefit__description">Не только китайского, <br>но&nbsp;и местного производства!</p>
             </li>
             <li class="benefits__item benefit benefit--wide">
               <figure class="benefit__figure benefit__figure--reversed">
@@ -89,10 +86,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/benefits/photo-2-desktop.webp 1x, img/benefits/photo-2-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/benefits/photo-2-tablet.webp 1x, img/benefits/photo-2-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/benefits/photo-2-tablet.webp 1x, img/benefits/photo-2-tablet@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/benefits/photo-2-desktop.jpg 1x, img/benefits/photo-2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/benefits/photo-2-tablet.jpg 1x, img/benefits/photo-2-tablet@2x.jpg 2x">
-                  <img class="benefit__image" src="img/benefits/photo-2-mobile.jpg" srcset="img/benefits/photo-2-mobile@2x.jpg 2x" width="320" height="260" alt="Вид на мост дьявола.">
+                  <img class="benefit__image" src="img/benefits/photo-2-mobile.webp" srcset="img/benefits/photo-2-mobile@2x.webp 2x" width="320" height="260" alt="Вид на мост дьявола.">
                 </picture>
               </figure>
             </li>
@@ -104,7 +98,7 @@
             <li class="benefits__item benefit">
               <h3 class="benefit__title">Красивая дорога</h3>
               <span class="benefit__number">№4</span>
-              <p class="benefit__description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем <br />не&nbsp;скучно!</p>
+              <p class="benefit__description">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем <br>не&nbsp;скучно!</p>
             </li>
             <li class="benefits__item benefit">
               <h3 class="benefit__title">Мало туристов</h3>
@@ -124,11 +118,13 @@
 
         <section class="map">
           <h2 class="visually-hidden">Расположение города Седона.</h2>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/thumbnails/map-desktop.jpg 1x, img/thumbnails/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/thumbnails/map-tablet.jpg 1x, img/thumbnails/map-tablet@2x.jpg 2x">
-            <img class="map__image" src="img/thumbnails/map-mobile.jpg" srcset="img/thumbnails/map-mobile@2x.jpg 2x" width="320" height="260" alt="Город Седона на карте.">
-          </picture>
+          <div class="map__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/thumbnails/map-desktop.webp 1x, img/thumbnails/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/thumbnails/map-tablet.webp 1x, img/thumbnails/map-tablet@2x.webp 2x">
+              <img class="map__image" src="img/thumbnails/map-mobile.webp" srcset="img/thumbnails/map-mobile@2x.webp 2x" width="320" height="260" alt="Город Седона на карте.">
+            </picture>
+          </div>
           <iframe class="map__embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13688501935!2d-111.83633793693551!3d34.854441887843656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1683249106391!5m2!1sen!2sru" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Город Седона на карте"></iframe>
         </section>
       </main>
