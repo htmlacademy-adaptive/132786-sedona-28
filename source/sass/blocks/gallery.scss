@@ -67,6 +67,7 @@
 
 .gallery__figure {
   margin: 0;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     background-color: $color-white-smoke;
@@ -79,22 +80,37 @@
 
 .gallery__link {
   display: block;
+  margin-bottom: 15px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .gallery__image {
   display: block;
   width: 100%;
-  margin-bottom: 15px;
   padding-top: 24px;
 
+  transition: opacity 0.3s ease, transform 0.5s ease;
+
   object-fit: cover;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   .gallery__item--large & {
     max-height: 400px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
     padding-top: 0;
   }
 }

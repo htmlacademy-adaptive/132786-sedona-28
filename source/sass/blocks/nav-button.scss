@@ -1,14 +1,45 @@
 .nav-button {
   position: relative;
 
+  width: 23px;
+  height: 23px;
   margin-right: 20px;
 
+  background-color: transparent;
   border: 0;
   cursor: pointer;
+
+  .no-js & {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover &__icon,
+  &:hover &__icon::before,
+  &:hover &__icon::after {
+    background-color: rgba($color-seagull, 0.6);
+  }
+
+  &:active &__icon,
+  &:active &__icon::before,
+  &:active &__icon::after {
+    background-color: rgba($color-seagull, 0.3);
+  }
+}
+
+.nav-button__icon {
+  top: 50%;
+
+  transform: translateY(-50%, -50%);
 
   &,
   &::before,
   &::after {
+    position: absolute;
+    left: 0;
     z-index: 3;
 
     display: inline-block;
@@ -23,8 +54,6 @@
   &::before,
   &::after {
     content: "";
-    position: absolute;
-    left: 0;
   }
 
   &::before {
@@ -34,29 +63,9 @@
   &::after {
     top: -9px;
   }
-
-  &:hover,
-  &:hover::before,
-  &:hover::after {
-    background-color: rgba($color-seagull, 0.6);
-  }
-
-  &:active,
-  &:active::before,
-  &:active::after {
-    background-color: rgba($color-seagull, 0.3);
-  }
-
-  .no-js & {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
-.is-nav-open .nav-button {
+.is-nav-open .nav-button__icon {
   background-color: rgba($color-white, 0);
 
   &::before,

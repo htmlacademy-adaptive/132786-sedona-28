@@ -40,7 +40,13 @@
 }
 
 .form-option__icon--radio {
+  flex-shrink: 0;
+
   border-radius: 50%;
+}
+
+.form-option__input:focus ~ .form-option__icon {
+  outline: 3px solid $color-night-rider;
 }
 
 .form-option__input:checked ~ .form-option__icon--radio::after {
@@ -59,6 +65,8 @@
 }
 
 .form-option__icon--checkbox {
+  flex-shrink: 0;
+
   border-radius: 4px;
 }
 
