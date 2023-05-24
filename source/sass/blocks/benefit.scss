@@ -57,7 +57,7 @@
 
     background-color: $color-seagull;
 
-    clip-path: polygon(50% 3.5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 4%, 100% 0.8%, 100% 100%, 0 100%, 0 0.8%);
 
     @media (min-width: $tablet-width) {
       padding-top: 0;
@@ -132,8 +132,14 @@
 
     background-image: url("../img/icons/icon-gift.svg");
 
+    @media (min-width: $tablet-width) {
+      transform: scale(1.05) translate(2px, 5px);
+    }
+
     @media (min-width: $desktop-width) {
       margin-top: 10px;
+
+      transform: scaleX(1.2) translate(-2px, -3px);
     }
   }
 
@@ -178,7 +184,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 35px 18px 39px 18px;
+  padding: 36px 18px 38px 18px;
 
   color: $color-white;
 

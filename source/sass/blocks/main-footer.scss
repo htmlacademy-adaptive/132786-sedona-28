@@ -1,19 +1,24 @@
 .main-footer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
-  padding: 28px 0 32px 0;
+  padding: 33px 82px;
 
-  gap: 15px;
+  gap: 30px;
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
+  justify-items: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 9px 11px 32px 13px;
+    padding: 36px 60px;
+
+    gap: 113px;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    grid-template-rows: 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 9px 11px 20px 13px;
+    padding: 36px 120px;
+
+    gap: 269px;
   }
 }
 

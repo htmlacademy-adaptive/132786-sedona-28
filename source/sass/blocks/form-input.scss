@@ -18,11 +18,12 @@
 .form-input__input {
   width: 100%;
   max-width: 430px;
-  padding: 16px;
+  padding: 18px 16px 14px;
 
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
+  font-family: inherit;
 
   background-color: $color-white-smoke;
   border: 0;
@@ -37,7 +38,7 @@
     align-self: center;
     max-width: 768px;
     height: 150px;
-    margin-bottom: 33px;
+    margin-bottom: 17px;
     padding: 18px 16px;
 
     font-size: 18px;
