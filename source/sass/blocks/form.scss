@@ -21,12 +21,12 @@
   flex-direction: column;
   width: 100%;
   margin: 0;
-  padding: 22px 0 8px 0;
+  padding: 0 0 34px 0;
 
   border: 0;
 
   &:first-child {
-    padding: 0 0 24px 0;
+    padding: 0 0 39px 0;
 
     @media (min-width: $tablet-width) {
       padding: 16px 0 24px 0;
@@ -113,7 +113,7 @@
 .form__legend {
   float: left;
   width: 100%;
-  margin: 24px auto 20px auto;
+  margin: 25px auto 20px auto;
 
   font-weight: 700;
   font-size: 18px;
@@ -150,6 +150,28 @@
   flex-direction: column;
 
   gap: 16px;
+
+  &:last-child {
+    margin-bottom: -10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 51px;
+    }
+  }
+
+  &--checkbox:last-child {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 64px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -201,24 +223,26 @@
 .form__submit {
   width: 100%;
   margin-top: 5px;
+  margin-bottom: 1px;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 50%;
     margin-top: 0;
-    margin-bottom: 77px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 384px;
+    margin-bottom: 64px;
     margin-left: 96px;
   }
 }
 
 .form__hint {
   display: block;
-  margin-bottom: 31px;
+  margin-bottom: 25px;
 
   font-size: 12px;
   line-height: 21px;

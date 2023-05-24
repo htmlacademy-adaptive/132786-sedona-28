@@ -16,6 +16,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 47px;
+  }
 }
 
 .video__player {
@@ -24,11 +28,16 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 43px;
   }
 }
 
 .video__player-preview {
+  display: block;
   width: 100%;
   margin: auto;
 }

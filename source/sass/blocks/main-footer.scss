@@ -1,23 +1,24 @@
 .main-footer {
   display: grid;
   align-items: center;
-  padding: 28px 0 32px 0;
+  padding: 33px 82px;
 
-  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  grid-template-rows: repeat(3, minmax(min-content, max-content));
   justify-items: center;
 
   @media (min-width: $tablet-width) {
     padding: 36px 60px;
 
-    gap: 113.5px;
-    grid-template-columns: 1fr 200px 1fr;
+    gap: 113px;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
     grid-template-rows: 1fr;
   }
 
   @media (min-width: $desktop-width) {
     padding: 36px 120px;
 
-    gap: 269.5px;
+    gap: 269px;
   }
 }
 

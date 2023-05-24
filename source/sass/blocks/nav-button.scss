@@ -31,7 +31,7 @@
 }
 
 .nav-button__icon {
-  top: 50%;
+  top: calc(50% - 2px);
 
   transform: translateY(-50%, -50%);
 

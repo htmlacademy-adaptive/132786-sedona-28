@@ -48,9 +48,9 @@
   width: 185px;
   height: 96px;
 
-  transition: transform 0.2s ease;
-
   transform: translate(-50%, 0);
+
+  transition: transform 0.2s ease;
 
   &:hover {
     transform: translate(-50%, -5px);

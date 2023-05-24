@@ -58,10 +58,14 @@
 
       @media (min-width: $tablet-width) {
         width: 457px;
+
+        transform: translateY(-11px);
       }
 
       @media (min-width: $desktop-width) {
-        transform: translate(-3px, -9px);
+        width: 460px;
+
+        transform: translate(-2px, -9px);
       }
     }
   }

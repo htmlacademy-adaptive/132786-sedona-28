@@ -1,7 +1,7 @@
 .socials {
   display: flex;
   flex-wrap: wrap;
-  margin: 14px 0 10px 0;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -14,7 +14,7 @@
 }
 
 .socials__link {
-  display: inline-block;
+  display: block;
   width: 48px;
   height: 48px;
 
@@ -22,7 +22,7 @@
   &--telegram::before,
   &--youtube::before {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 3px);
     left: 50%;
 
     transform: translate(-50%, -50%);
