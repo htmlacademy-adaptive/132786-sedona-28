@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -15,6 +17,7 @@
       <header class="main-header no-js">
         <button class="main-header__toggle nav-button" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
+          <span class="nav-button__icon" aria-hidden="true"></span>
         </button>
         <nav class="main-header__nav main-nav">
           <a class="main-nav__logo" href="index.html" >
@@ -167,6 +170,7 @@
         </a>
       </footer>
 
+      <!--Для показа модального окна к элементу с классом modal добавьте класс is-open-->
       <div class="modal">
         <div class="modal__wrapper">
           <div class="modal__info">
@@ -177,6 +181,7 @@
         </div>
       </div>
 
+      <!--Для показа модального окна к элементу с классом modal добавьте класс is-open-->
       <div class="modal modal--success">
         <div class="modal__wrapper">
           <div class="modal__info">

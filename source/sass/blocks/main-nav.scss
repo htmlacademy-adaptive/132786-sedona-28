@@ -50,6 +50,16 @@
 
   transform: translate(-50%, 0);
 
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translate(-50%, -5px);
+  }
+
+  &:active {
+    transform: translate(-50%, 0);
+  }
+
   @media (min-width: $tablet-width) {
     z-index: 2;
   }
